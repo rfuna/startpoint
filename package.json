@@ -1,0 +1,29 @@
+{
+  "name": "startpoint",
+  "version": "1.0.0",
+  "description": "website for the StartPoint app",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfuna/startpoint.git"
+  },
+  "author": "Ray Funahashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfuna/startpoint/issues"
+  },
+  "homepage": "https://github.com/rfuna/startpoint#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
