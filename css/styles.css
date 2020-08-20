@@ -1,0 +1,156 @@
+  /* font-family: 'Vollkorn', serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto Slab', serif; */
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bolder;
+}
+
+#navbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  display: block;
+  transition: top 0.8s;
+  text-decoration: none;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  font-weight: 500;
+  margin: 2em 3em;
+  font-size: 16px;
+  color: #fff;
+}
+
+#logo {
+  position: fixed;
+}
+
+/* hero slider */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero1, .hero2, .hero3, .hero4 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* stops the horizontal and vertical scrolling for oversized background image */
+  overflow: hidden;
+}
+
+img {
+  width: 110%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation:zoom-in 6s linear infinite; 
+  z-index: -1;
+}
+@keyframes zoom-in {
+  100% {
+    width: 100%;
+  }
+
+}
+
+
+.text-box {
+  width: 600px;
+  position: absolute !important;
+  top: 400px;
+  left: 200px;
+  color: #fff;
+}
+
+.text-box h1 {
+  margin-bottom: 25px;
+}
+
+.text-box p {
+  font-size: 20x;
+  line-height: 30px;
+}
+
+.hero1 {
+  animation: slide1 12s linear infinite;
+}
+.hero2 {
+  animation: slide2 12s linear infinite;
+}
+.hero3 {
+  animation: slide3 12s linear infinite;
+}
+.hero4 {
+  animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1 {
+  0%{
+    visibility: visible;
+  }
+  33%{
+    visibility: hidden;
+  }
+  66%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+@keyframes slide2 {
+  0%{
+    visibility: hidden;
+  }
+  33%{
+    visibility: visible;
+  }
+  66%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: hidden ;
+  }
+}
+
+@keyframes slide3 {
+  0%{
+    visibility: hidden;
+  }
+  33%{
+    visibility: hidden;
+  }
+  66%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden ;
+  }
+}
+
+@keyframes slide4 {
+  0%{
+    visibility: hidden;
+  }
+  33%{
+    visibility: hidden;
+  }
+  66%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+}
+
+.slider {
+  display: block;
+}
